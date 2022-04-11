@@ -3,6 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import { BrowserTracing } from '@sentry/tracing'
+import moment from 'moment'
+import 'moment/locale/pt-br'
 
 import reportWebVitals from './config/reportWebVitals'
 import App from 'app/core/App'
@@ -15,6 +17,7 @@ Sentry.init({
   tracesSampleRate: 1.0,
   enabled: process.env.NODE_ENV === 'production',
 })
+moment.locale('pt-br')
 
 ReactDOM.render(
   <React.StrictMode>

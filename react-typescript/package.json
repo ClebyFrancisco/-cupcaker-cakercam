@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "~2.8.0",
+    "@mdi/font": "^6.6.96",
+    "@mdi/js": "^6.6.96",
+    "@mdi/react": "^1.5.0",
     "@sentry/react": "^6.17.9",
     "@sentry/tracing": "^6.17.9",
     "axios": "~0.21.2",
@@ -13,6 +16,7 @@
     "enzyme-adapter-react-16": "~1.15.6",
     "jest-canvas-mock": "~2.3.1",
     "lodash": "~4.17.21",
+    "moment": "^2.29.2",
     "react": "~17.0.2",
     "react-dom": "~17.0.2",
     "react-hook-form": "~7.11.1",
