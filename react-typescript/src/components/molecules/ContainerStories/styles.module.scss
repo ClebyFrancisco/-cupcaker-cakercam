@@ -1,0 +1,13 @@
+.containerStories {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .stories {
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

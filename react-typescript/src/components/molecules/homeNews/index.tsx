@@ -35,7 +35,7 @@ const HomeNews = ({
         <div className={styles.imageNews}>
           <img src={image ? image : 'noImage.png'} alt={title} />
           <div className={styles.label}>
-            <LabelType text={type} />
+            <LabelType text={"#"+type.toUpperCase()} />
           </div>
         </div>
         <div className={styles.description}>
