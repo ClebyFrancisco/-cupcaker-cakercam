@@ -10,9 +10,6 @@ interface IStoriesProps {
 }
 
 const ContainerStories = ({ contents }: IStoriesProps): JSX.Element => {
-  {
-    console.log(contents)
-  }
   return (
     <div className={styles.containerStories}>
       <div className={styles.stories}>

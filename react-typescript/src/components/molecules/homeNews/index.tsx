@@ -7,16 +7,16 @@ import { LabelType, Tag } from 'components/atoms'
 
 import styles from './styles.module.scss'
 
-interface IHomeNews {
+export interface IHomeNews {
   title: string
   description?: string
   author?: string
-  createdAt?: string
   comments?: number
   tags?: string[]
   type: string
   image?: string
   date?: string
+  id?: string
 }
 const HomeNews = ({
   title,
@@ -35,7 +35,7 @@ const HomeNews = ({
         <div className={styles.imageNews}>
           <img src={image ? image : 'noImage.png'} alt={title} />
           <div className={styles.label}>
-            <LabelType text={"#"+type.toUpperCase()} />
+            <LabelType text={'#' + type.toUpperCase()} />
           </div>
         </div>
         <div className={styles.description}>
@@ -49,7 +49,7 @@ const HomeNews = ({
                 ))}
               </div>
               <p>
-                por <span>{author}</span>, {date? momentDate:""}
+                por <span>{author}</span>, {date ? momentDate : ''}
               </p>
             </div>
             <div className={styles.comments}>

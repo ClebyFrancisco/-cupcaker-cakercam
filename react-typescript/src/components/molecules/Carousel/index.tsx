@@ -17,7 +17,6 @@ interface ICarouselProps {
   }[]
 }
 const CarouselContainer = ({ contents }: ICarouselProps): JSX.Element => {
-  console.log(contents[1].description)
   return (
     <div className={styles.containerCarousel}>
       <Carousel fade={true} pause={false} className={styles.carousel}>
